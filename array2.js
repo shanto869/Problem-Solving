@@ -58,48 +58,5 @@ function compoundInterest(principal, rate, time){
 // compoundInterest(5000, 8, 2);
 
 
-// findout large element of an array
-
-const friends = ['Rahim', 'Karim', 'Rahaman', 'Anik', 'Lokanath'];
-
-let largeName = friends[0];
-
-for(let i = 0; i < friends.length; i++){
-    let element = friends[i];
-    
-    if(element.length > largeName.length){
-        largeName = element;
-    }
-}
-
-console.log(largeName);
 
 
-// findout a largest number form an array
-const numbers = [24, 29, 615, 29, 567, 27, 25, 52];
-let largeNumber = numbers[0];
-
-for(let i = 0; i < numbers.length; i++){
-    let number = numbers[i];
-
-    if(number > largeNumber){
-        largeNumber = number;
-    }
-    // console.log(i, number)
-}
-console.log(largeNumber);
-
-
-// findout a smallest number form an array
-const numberArray = [12, 4, 2, 5, 29, 84, 1, 0, 28];
-let smallestNumber = numberArray[0];
-
-for(let i = 0; i < numberArray.length; i++){
-    let number = numberArray[i];
-
-    if(number < smallestNumber){
-        smallestNumber = number;
-    }
-}
-
-console.log(smallestNumber);

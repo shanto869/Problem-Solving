@@ -69,7 +69,7 @@ const minimumNum = minInArray(numArr);
 
 function removeDuplicate(numbers){
     const uniqe = [];
-    
+
     for(let i = 0; i < numbers.length; i++){
         let element = numbers[i];
 
@@ -83,6 +83,7 @@ function removeDuplicate(numbers){
 const numArray = [2, 4, 2, 4, 8, 2, 4, 6, 8, 9, 2, 5, 8, 9, 5];
 const uniqeNum = removeDuplicate(numArray);
 console.log(uniqeNum);
+// --------------
 
 function removeDuplicate(names){
     let uniqeNam = [];
@@ -100,3 +101,54 @@ function removeDuplicate(names){
 const personArr = ['abul', 'babul', 'jabul', 'kabul', 'mukhbul', 'jabul', 'kabul', 'abul', 'mukhbul', 'babul', 'kabul'];
 const uniqeName = removeDuplicate(personArr);
 console.log(uniqeName);
+
+// ===============================
+
+// findout a smallest number form an array
+const numberArray = [12, 4, 2, 5, 29, 84, 1, 0, 28];
+let smallestNumber = numberArray[0];
+
+for(let i = 0; i < numberArray.length; i++){
+    let number = numberArray[i];
+
+    if(number < smallestNumber){
+        smallestNumber = number;
+    }
+}
+
+console.log(smallestNumber);
+
+// ================================
+
+// findout large element of an array
+
+const friends = ['Rahim', 'Karim', 'Rahaman', 'Anik', 'Lokanath'];
+
+let largeName = friends[0];
+
+for(let i = 0; i < friends.length; i++){
+    let element = friends[i];
+    
+    if(element.length > largeName.length){
+        largeName = element;
+    }
+}
+
+console.log(largeName);
+
+// ===============================
+
+// findout a largest number form an array
+const numbers = [24, 29, 615, 29, 567, 27, 25, 52];
+let largeNumber = numbers[0];
+
+for(let i = 0; i < numbers.length; i++){
+    let number = numbers[i];
+
+    if(number > largeNumber){
+        largeNumber = number;
+    }
+    // console.log(i, number)
+}
+
+console.log(largeNumber);
