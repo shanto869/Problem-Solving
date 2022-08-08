@@ -42,7 +42,7 @@ function maxInArray(numbers){
 
 const arr = [8, 2, 56, 2, 9, 5, 22, 9, 69, 8];
 const maxNumber = maxInArray(arr);
-console.log(maxNumber);
+// console.log(maxNumber);
 
 // ======================================
 // find a minimum number form an array
@@ -62,4 +62,41 @@ function minInArray(numbers){
 
 const numArr = [9, 3, 8, 92, 22, 10, -2, 5, 7];
 const minimumNum = minInArray(numArr);
-console.log(minimumNum);
+// console.log(minimumNum);
+
+// =====================================
+// remove the duplicate element from an array
+
+function removeDuplicate(numbers){
+    const uniqe = [];
+    
+    for(let i = 0; i < numbers.length; i++){
+        let element = numbers[i];
+
+        if(uniqe.includes(element) === false){
+            uniqe.push(element)
+        }
+    }
+    return uniqe;
+}
+
+const numArray = [2, 4, 2, 4, 8, 2, 4, 6, 8, 9, 2, 5, 8, 9, 5];
+const uniqeNum = removeDuplicate(numArray);
+console.log(uniqeNum);
+
+function removeDuplicate(names){
+    let uniqeNam = [];
+
+    for(let i = 0; i < names.length; i++){
+        let elementName = names[i];
+
+        if(uniqeNam.includes(elementName) === false){
+            uniqeNam.push(elementName)
+        }
+    }
+    return uniqeNam;
+}
+
+const personArr = ['abul', 'babul', 'jabul', 'kabul', 'mukhbul', 'jabul', 'kabul', 'abul', 'mukhbul', 'babul', 'kabul'];
+const uniqeName = removeDuplicate(personArr);
+console.log(uniqeName);
