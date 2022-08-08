@@ -32,7 +32,7 @@ else{
     console.log(result, 'Sorry! your input is wrong!');
 }
 
-
+// =====================================
 // simple interest calculate function
 
 function interest(principal, rate, time){
@@ -43,7 +43,7 @@ function interest(principal, rate, time){
 }
 
 // interest(5000, 10, 5);
-
+// =======================================
 
 // complex interest calculate function
 
@@ -57,6 +57,47 @@ function compoundInterest(principal, rate, time){
 
 // compoundInterest(5000, 8, 2);
 
+// ==================================
+
+// findout the numbers who will devied by 3 and 5
+
+// for(let i = 0; i <= 50; i++){
+
+//     if(i % 3 === 0 && i % 5 === 0){
+//         console.log('FooBar');
+//     }
+//     else if(i % 3 === 0){
+//         console.log('Foo');
+//     }
+//     else if(i % 5){
+//         console.log('Bar');
+//     }
+//     else{
+//         console.log(i)
+//     }
+// }
+
+// ========================
+
+// find out the total quantity of wood
 
 
+function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
+    const perChairWood = 3;
+    const perTableWood = 10;
+    const perBedWood = 50;
 
+    const chairWood = perChairWood * chairQuantity;
+    const tableWood = perTableWood * tableQuantity;
+    const bedWood = perBedWood * bedQuantity;
+
+    const totalWood = chairWood + tableWood + bedWood;
+    return totalWood;
+}
+
+const totalWood = woodCalculator(1, 1, 1);
+console.log(totalWood);
+
+// ======================================
+
+// 
