@@ -119,3 +119,16 @@ function ticketPrice(ticketQuantity){
 
 const price = ticketPrice(300);
 console.log('Total Ticket Price is:', price);
+
+// =================================
+function add(number1, number2){
+    if(typeof number1 !== 'number' || typeof number2 !== 'number'){
+        console.log('Please Enter a Number');
+    }
+    else{
+
+        console.log(number1 + number2);
+    }
+}
+
+add(2, 5);
